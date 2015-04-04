@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Miguel Viñan - Web designer</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Mi equipo de dos, ayudamos a las personas y empresas a desarrollar su sitio Web de acuerdo a las necesidades del usuario, solucionamos tu problema y nececidad">
+	<style>
+		@-webkit-keyframes load{
+			0%{width:0%;}
+			100%{width:100%;}
+		}
+		@keyframes load {
+			0%{width:0%;}
+			100%{width:100%;}
+		}
+		body{
+			width:1000px;
+		}
+		.wait-bar{
+			width: 70%;
+			background: #45b4f8;
+			height: 3px;
+			position: relative;
+			margin: 0 auto;
+		}
+		.box-bar{
+			position: absolute;
+			margin: 0 auto;
+			max-width: 800px;
+			height: 5px;
+			top: 50vh;
+			left: 0;
+			right: 0;
+		}
+		.load-bar{
+			width:100%;
+			height:3px;
+			background:#f8134e;
+			animation: 4s load ease-in infinite;
+			-webkit-animation: 4s load ease-in infinite;
+		}
+		.aviso{
+			position: absolute;
+			margin: 0 auto;
+			max-width: 800px;
+			height: 5px;
+			top: 50vh;
+			left: 0;
+			right: 0;
+		}
+		.aviso p{
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box-bar">
+		<div class="wait-bar">
+			<div class="load-bar"></div>
+		</div>
+	</div>
+	<article class="aviso">
+		<p>Estamos trabajando duro.</p>
+		<p>No es tu culpa es la nuestra, regresa en otro momento...</p>
+	</article>
+</body>
+</html>
